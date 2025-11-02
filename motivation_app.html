@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мотивация</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+        .quote {
+            background: #f7f7f7;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            min-height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #333;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            transform: scale(1.05);
+        }
+        button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💪 Мотивация дня</h1>
+        <div class="quote" id="quote">Нажми кнопку для мотивации!</div>
+        <button onclick="getMotivation()">Получить мотивацию</button>
+    </div>
+
+    <script>
+        const quotes = [
+            "Успех — это способность идти от неудачи к неудаче, не теряя энтузиазма.",
+            "Не ждите. Никогда не будет подходящего времени.",
+            "Единственный способ делать великую работу — любить то, что вы делаете.",
+            "Ваше время ограничено, не тратьте его на жизнь чужой жизнью.",
+            "Будущее зависит от того, что вы делаете сегодня.",
+            "Не бойтесь отказаться от хорошего ради великого.",
+            "Успех — это не ключ к счастью. Счастье — это ключ к успеху.",
+            "Начните там, где вы есть. Используйте то, что у вас есть. Делайте, что можете.",
+            "Верьте в себя и всё станет возможным.",
+            "Мечты не работают, если вы не работаете."
+        ];
+
+        function getMotivation() {
+            const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+            document.getElementById('quote').textContent = randomQuote;
+            
+            // Telegram WebApp API
+            if (window.Telegram.WebApp) {
+                window.Telegram.WebApp.HapticFeedback.impactOccurred('medium');
+            }
+        }
+
+        // Initialize Telegram WebApp
+        if (window.Telegram.WebApp) {
+            window.Telegram.WebApp.ready();
+            window.Telegram.WebApp.expand();
+        }
+    </script>
+</body>
+</html>
