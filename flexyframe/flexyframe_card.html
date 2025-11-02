@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Картина FlexyFrame</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(120deg, #ffffff 60%, #1b2550 100%);
+      font-family: 'Montserrat', sans-serif;
+      color: #1a164e;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .art-card {
+      background: linear-gradient(120deg, #ff2599 15%, #41e1ff 85%);
+      border-radius: 24px;
+      box-shadow: 0 18px 62px #3188da66;
+      margin-top: 78px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 540px;
+      width: 100%;
+    }
+    .frame {
+      padding: 12px;
+      background: #fff;
+      border: 8px solid #ff2599;
+      box-shadow: 0 0 38px #41e1ff88, 0 0 5px #fff;
+      max-width: 420px;
+      border-radius: 20px;
+      margin-bottom: 23px;
+    }
+    .frame img {
+      display: block;
+      max-width: 390px;
+      max-height: 230px;
+      border-radius: 12px;
+    }
+    .art-title {
+      font-size: 28px;
+      font-weight: 800;
+      color: #130e42;
+      margin-bottom: 13px;
+      text-align: center;
+    }
+    .frame-size {
+      font-size: 19px;
+      color: #3188da;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 15px;
+      letter-spacing: 2px;
+    }
+    .desc {
+      text-align: center;
+      font-size: 18px;
+      color: #2b385f;
+      margin-bottom: 15px;
+    }
+    .buy-btn {
+      background: linear-gradient(100deg, #ff2599 55%, #41e1ff 100%);
+      font-size: 25px;
+      font-weight: 700;
+      color: #fff;
+      border: none;
+      border-radius: 15px;
+      padding: 18px 54px;
+      cursor: pointer;
+      box-shadow: 0 2px 28px #ff259944;
+      margin-top: 11px;
+      margin-bottom: 14px;
+    }
+    .buy-btn:hover {
+      background: linear-gradient(100deg, #41e1ff 55%, #ff2599 100%);
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 12px 25px;
+      border-radius: 8px;
+      color: #fff;
+      background: #3188da;
+      text-decoration: none;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+    <div class="art-card">
+      <div class="frame"><img src="flexyframe_card_1.png" alt="Картина"></div>
+      <div class="art-title">Gojo Energy</div>
+      <div class="frame-size">60 × 40 см</div>
+      <div class="desc">Супер-энергичная работа в неоновой палитре. Яркая, стильная и современная для вашего интерьера, печать на премиальном холсте или постере в рамке ручной работы.</div>
+      <button class="buy-btn">Купить через Сбер</button>
+      <a href="flexyframe_main.html" class="back-link">← К галерее</a>
+    </div>
+</body>
+</html>

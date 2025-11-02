@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Корзина FlexyFrame</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(120deg, #0a1231 60%, #41e1ff 100%);
+      font-family: 'Montserrat', sans-serif;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .cart {
+      margin-top: 64px;
+      background: linear-gradient(100deg, #fff 47%, #41e1ff 99%);
+      border-radius: 30px;
+      box-shadow: 0 12px 44px #41e1ff22;
+      padding: 34px 36px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 370px;
+      max-width: 98vw;
+    }
+    h1 {
+      color: #3188da;
+      margin-bottom: 12px;
+      font-size: 27px;
+      font-weight: 800;
+      text-align: center;
+    }
+    .cart-list {
+      margin-bottom: 14px;
+      width: 100%;
+    }
+    .cart-item {
+      background: linear-gradient(90deg, #ff2599 40%, #41e1ff 90%);
+      border-radius: 10px;
+      padding: 10px 18px;
+      color: #fff;
+      font-size: 20px;
+      margin-bottom: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .pay-btn {
+      background: linear-gradient(90deg, #34fbe7 40%, #ffb300 90%);
+      color: #140505;
+      font-size: 22px;
+      font-weight: bold;
+      border: none;
+      border-radius: 13px;
+      padding: 15px 53px;
+      margin-top: 18px;
+      cursor: pointer;
+      box-shadow: 0 2px 38px #ffb30033;
+      transition: background .2s;
+    }
+    .pay-btn:hover {
+      background: linear-gradient(90deg, #ffb300 40%, #34fbe7 90%);
+      color: #1457de;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 12px 25px;
+      border-radius: 8px;
+      color: #0a1231;
+      background: #fffffff2;
+      text-decoration: none;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="cart">
+    <h1>Корзина</h1>
+    <div class="cart-list">
+      <div class="cart-item">Gojo Energy &nbsp;<span>1 шт · 6990₽</span></div>
+      <!-- тут можно добавить другие работы -->
+    </div>
+    <button class="pay-btn">Оплатить через Сбер</button>
+    <a href="flexyframe_main.html" class="back-link">← Продолжить просмотр</a>
+  </div>
+</body>
+</html>

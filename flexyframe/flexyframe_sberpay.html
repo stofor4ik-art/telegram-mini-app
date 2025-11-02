@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Оплата через Сбер FlexyFrame</title>
+<style>
+body {margin:0; background:#f2f8ff; min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; font-family:Montserrat,sans-serif; color:#171717;}
+.sberpay-card {background:#fff;border-radius:22px;box-shadow:0 10px 32px #41e1ff1c;padding:43px 34px;max-width:420px; text-align:center;}
+h1 {color:#41e1ff;font-size:29px;margin-bottom:20px;}
+p {font-size:17px; font-weight:600; color:#3188da;}
+.pay-link {margin:16px auto; font-size:18px; font-weight:700; color:#fff; background:#34fbe7; display:inline-block; padding:14px 46px; border-radius:14px; text-decoration:none;box-shadow:0 2px 22px #34fbe766;}
+.qr-demo {margin:18px auto;display:flex; flex-direction:column;align-items:center;background:#f5fdff;border-radius:14px;padding:18px 21px;}
+.qr-title {color:#ff2599;font-size:16px;margin-bottom:5px;}
+img.qr-img {max-width:142px; margin-top:9px;}
+</style>
+</head>
+<body>
+<div class="sberpay-card">
+<h1>Оплата через Сбер</h1>
+<p>Для демонстрации вы можете перейти по ссылке или воспользоваться QR-кодом ниже (тестовый)</p>
+<a class="pay-link" href="https://www.sberbank.ru/ru/person/payments" target="_blank">Перейти в Сбер</a>
+<div class="qr-demo">
+<div class="qr-title">QR для Сбер (пример)</div>
+<img class="qr-img" src="https://static.tinkoff.ru/documents/qr/qr_demo.png" alt="QR demo">
+</div>
+</div>
+</body>
+</html>
